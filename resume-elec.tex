@@ -1,0 +1,99 @@
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.5cm, top=1.5cm, right=1.5cm, bottom=1.5cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-emerald}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{DB680F}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+\definecolor{text}{HTML}{000000}
+\definecolor{graytext}{HTML}{1F1F1F}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[circle,edge,left]{./photo.jpeg}
+\name{}{Vishnu S}
+% \name{Vishnu}{Santhosh}
+\position{PHP FullStack Developer{\enskip\cdotp\enskip}Electrical \& Electronics Engineer}
+\address{Vishnu Bhavan, Ambipoiaka P.O Kundara Kollam - 691501}
+
+\mobile{(+91) 949-648-0402}
+\email{hello@vishnusanthosh.com}
+\homepage{www.vishnusanthosh.com}
+\github{me92face}
+\linkedin{vishnu-santhosh}
+\twitter{@me92face}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{gonza.u}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
+
+\quote{``Seeking to involve in a company whose works align with my interests, allowing me to showcase my skills, improve them and build a sound technical career with a perfect work-life balance. I would like to work in a challenging environment within a progressive organization."}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Vishnu S~~~·~~~Resume}
+%   {Vishnu Santhosh~~~·~~~Resume}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+\input{resume/summary.tex}
+\input{resume/experience.tex}
+\input{resume/education.tex}
+\input{resume/skills-elec.tex}
+\pagebreak
+\input{resume/achievements.tex}
+\input{resume/internships.tex}
+\input{resume/certifications.tex}
+% \input{resume/honors.tex}
+% \input{resume/projects.tex}
+% \input{resume/writing.tex}
+% \input{resume/extracurricular.tex}
+\input{resume/additional.tex}
+
+%-------------------------------------------------------------------------------
+\end{document}
